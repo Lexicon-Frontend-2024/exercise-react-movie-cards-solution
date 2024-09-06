@@ -7,7 +7,7 @@ export function Header(): ReactElement {
       <h1 className="logo">The Movie List</h1>
       <nav className="links">
         <Link className="link" to="/">MovieList</Link>
-        <Link className="link" to="/add-move">Add</Link>
+        <Link className="link" to="/add-movie">Add</Link>
       </nav>
     </header>
   );

@@ -12,6 +12,7 @@ export interface IOption {
 }
 
 export interface IMovieContext {
+  addMovie: (movie: IMovie) => void;
   movies: IMovie[];
   removeMovie: (movie: IMovie) => void;
 }

@@ -18,6 +18,7 @@ export function App(): ReactElement {
   };
 
   const movieContext: IMovieContext = {
+    addMovie,
     movies,
     removeMovie,
   };
