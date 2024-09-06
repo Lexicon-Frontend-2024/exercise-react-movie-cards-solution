@@ -20,6 +20,7 @@ export function App(): ReactElement {
 
   const movieContext: IMovieContext = {
     movies,
+    removeMovie,
   };
 
   return (

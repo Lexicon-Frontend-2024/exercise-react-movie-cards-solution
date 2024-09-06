@@ -6,8 +6,6 @@ import { useOutletContext } from "react-router-dom";
 export function MovieListPage(): ReactElement {
   const { movies } = useOutletContext<IMovieContext>();
 
-  console.log(movies);
-
   return (
     <section className="movie-list">
       {movies.map((m) => (
