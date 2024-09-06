@@ -5,6 +5,7 @@ import { IMovie } from "../interfaces";
 import { MovieListPage } from "../pages";
 
 import "../css/App.css";
+import { Outlet } from "react-router-dom";
 
 export function App(): ReactElement {
   const [movies, setMovies] = useState<IMovie[]>(moviesFromData);
@@ -19,8 +20,7 @@ export function App(): ReactElement {
 
   return (
     <>
-      <AddMovie addMovie={addMovie} />
-      <MovieListPage movies={movies} removeMovie={removeMovie} />
+      <Outlet />
     </>
   );
 }
