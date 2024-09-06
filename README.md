@@ -1,6 +1,6 @@
 # Solution example for Movie Cards.
 
-This solution comes with three branches. The first one: the `main` branch is the original solution branch. The `router-context-version` is the branch I coded together with you. It includes a router and a context as well. It has a commit history if you would like to follow the steps more closely.
+This solution comes with three branches. The first one: the `main` branch is the original solution branch. The `use-outlet-context-version` is the brancht hat includes the useOutledContext version of the solution. The `context-versoin` inlcudes our own context file. Both of these branches have a commit history if you would like to follow the steps more closely.
 
 Below is the original exercise description.
 
