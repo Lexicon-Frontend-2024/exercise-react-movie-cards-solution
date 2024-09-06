@@ -1,5 +1,6 @@
 @import url("./AddMovie.css");
 @import url("./Button.css");
+@import url("./Header.css");
 @import url("./Input.css");
 @import url("./MovieCard.css");
 @import url("./MovieList.css");
@@ -22,6 +23,7 @@ html {
 
 body {
   margin: 1rem;
+  padding-top: 120px;
 }
 
 #root {

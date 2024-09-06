@@ -7,7 +7,7 @@ interface IMovieCardProps {
 }
 
 export function MovieCard({ movie }: IMovieCardProps): ReactElement {
-  const { removeMovie } = useOutletContext<IMovieContext>();
+  const { removeMovie} = useOutletContext<IMovieContext>();
 
   return (
     <article className="movie-card" onClick={() => removeMovie(movie)}>
