@@ -1,6 +1,6 @@
 # Solution example for Movie Cards.
 
-This solution comes with three branches. The first one: the _main_ branch is the original solution branch. The _router-version_ is the branch I used to prepare the addition of React Router to the solution. The third one _router-version-code-along_ is the branch I coded together with you, which means it has a richer commit history is you would like to follow the steps more closely.
+This solution comes with three branches. The first one: the `main` branch is the original solution branch. The `router-context-version` is the branch I coded together with you. It includes a router and a context as well. It has a commit history if you would like to follow the steps more closely.
 
 Below is the original exercise description.
 

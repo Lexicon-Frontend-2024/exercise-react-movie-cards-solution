@@ -12,14 +12,14 @@ export function App(): ReactElement {
     setMovies([movie, ...movies]);
   };
 
-  const handleOnMovieClick = (movie: IMovie): void => {
+  const removeMovie = (movie: IMovie): void => {
     setMovies(movies.filter((m) => m !== movie));
   };
 
   return (
     <>
       <AddMovie addMovie={addMovie} />
-      <MovieList movies={movies} onMovieClick={handleOnMovieClick} />
+      <MovieList movies={movies} removeMovie={removeMovie} />
     </>
   );
 }
