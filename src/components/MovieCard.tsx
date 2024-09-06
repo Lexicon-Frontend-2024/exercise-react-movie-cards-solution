@@ -1,13 +1,13 @@
-import { ReactElement } from "react";
-import { IMovie, IMovieContext } from "../interfaces";
-import { useOutletContext } from "react-router-dom";
+import { ReactElement, useContext } from "react";
+import { IMovie } from "../interfaces";
+import { MovieContext } from "../context/MovieProvider";
 
 interface IMovieCardProps {
   movie: IMovie;
 }
 
 export function MovieCard({ movie }: IMovieCardProps): ReactElement {
-  const { removeMovie} = useOutletContext<IMovieContext>();
+  const { removeMovie } = useContext(MovieContext);
 
   return (
     <article className="movie-card" onClick={() => removeMovie(movie)}>

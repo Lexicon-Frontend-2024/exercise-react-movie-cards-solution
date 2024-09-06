@@ -1,6 +1,6 @@
 import { createContext, ReactElement, ReactNode, useState } from "react";
-import { moviesFromData } from "./data";
-import { IMovie, IMovieContext } from "./interfaces";
+import { moviesFromData } from "../data";
+import { IMovie, IMovieContext } from "../interfaces";
 
 interface IMovieProviderProps {
   children: ReactNode;
@@ -8,7 +8,7 @@ interface IMovieProviderProps {
 
 export const MovieContext = createContext<IMovieContext>({} as IMovieContext);
 
-export function MovieProvider({children} : IMovieProviderProps): ReactElement {
+export function MovieProvider({ children }: IMovieProviderProps): ReactElement {
   const [movies, setMovies] = useState<IMovie[]>(moviesFromData);
 
   const addMovie = (movie: IMovie) => {
