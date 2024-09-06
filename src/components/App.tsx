@@ -1,7 +1,8 @@
 import { ReactElement, useState } from "react";
-import { AddMovie, MovieList } from ".";
+import { AddMovie } from ".";
 import { moviesFromData } from "../data";
 import { IMovie } from "../interfaces";
+import { MovieListPage } from "../pages";
 
 import "../css/App.css";
 
@@ -19,7 +20,7 @@ export function App(): ReactElement {
   return (
     <>
       <AddMovie addMovie={addMovie} />
-      <MovieList movies={movies} removeMovie={removeMovie} />
+      <MovieListPage movies={movies} removeMovie={removeMovie} />
     </>
   );
 }
