@@ -1,5 +1,4 @@
 export * from "./App";
-export * from "./AddMovie";
 export * from "./Button";
 export * from "./Header";
 export * from "./Input";
