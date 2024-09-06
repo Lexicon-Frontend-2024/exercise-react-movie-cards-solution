@@ -1,7 +1,7 @@
 import { ReactElement, useState } from "react";
 import { AddMovie } from ".";
 import { moviesFromData } from "../data";
-import { IMovie } from "../interfaces";
+import { IMovie, IMovieContext } from "../interfaces";
 import { MovieListPage } from "../pages";
 
 import "../css/App.css";
@@ -18,9 +18,13 @@ export function App(): ReactElement {
     setMovies(movies.filter((m) => m !== movie));
   };
 
+  const movieContext: IMovieContext = {
+    movies,
+  };
+
   return (
     <>
-      <Outlet />
+      <Outlet context={movieContext} />
     </>
   );
 }

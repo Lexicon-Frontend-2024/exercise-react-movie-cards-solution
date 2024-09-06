@@ -10,3 +10,7 @@ export interface IOption {
   label: string;
   value: string;
 }
+
+export interface IMovieContext {
+  movies: IMovie[];
+}
